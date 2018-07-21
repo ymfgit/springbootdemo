@@ -4,3 +4,12 @@ spring:
     url: jdbc:mysql://localhost:3306/db_user
     username: root
     password: ymfwj
+
+
+mybatis:
+
+  type-aliases-package: com.ymf.springboot.springbootdemo.bean
+
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+  config-location: classpath:mybatis/mybatis-config.xml

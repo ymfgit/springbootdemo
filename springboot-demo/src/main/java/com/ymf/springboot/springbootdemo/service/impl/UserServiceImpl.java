@@ -2,6 +2,7 @@ package com.ymf.springboot.springbootdemo.service.impl;
 
 import com.ymf.springboot.springbootdemo.bean.User;
 import com.ymf.springboot.springbootdemo.dao.UserDao;
+import com.ymf.springboot.springbootdemo.mapper.UserMapper;
 import com.ymf.springboot.springbootdemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,7 +21,7 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService{
     @Autowired
-    private UserDao userDao;
+    private UserMapper userDao;
 
     @Override
     public User getUserById(Integer id) {
